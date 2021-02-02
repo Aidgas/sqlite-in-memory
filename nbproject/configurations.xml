@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы"
+                   projectFiles="true">
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>include/inih/cpp/INIReader.cpp</itemPath>
+    <itemPath>include/buf.c</itemPath>
+    <itemPath>include/http_parser.c</itemPath>
+    <itemPath>include/inih/ini.c</itemPath>
+    <itemPath>include/jsmn.c</itemPath>
+    <itemPath>include/sqlite3.c</itemPath>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+        </ccTool>
+        <linkerTool>
+          <commandLine>-pthread -ldl -licui18n -licuuc -licudata -licuio</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="include/buf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/http_parser.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/inih/cpp/INIReader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/inih/ini.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/jsmn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/sqlite3.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="include/buf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/http_parser.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/inih/cpp/INIReader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/inih/ini.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/jsmn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/sqlite3.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
